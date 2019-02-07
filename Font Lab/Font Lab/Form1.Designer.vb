@@ -28,11 +28,12 @@ Partial Class Form1
         Me.Button1 = New System.Windows.Forms.Button()
         Me.FontDialog1 = New System.Windows.Forms.FontDialog()
         Me.ColorDialog1 = New System.Windows.Forms.ColorDialog()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(12, 2)
+        Me.Button2.Location = New System.Drawing.Point(3, 2)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 5
@@ -51,18 +52,28 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(161, 2)
+        Me.Button1.Location = New System.Drawing.Point(84, 2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 3
         Me.Button1.Text = "Colour"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(165, 2)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 6
+        Me.Button3.Text = "Close"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(245, 123)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
@@ -79,4 +90,5 @@ Partial Class Form1
     Friend WithEvents Button1 As Button
     Friend WithEvents FontDialog1 As FontDialog
     Friend WithEvents ColorDialog1 As ColorDialog
+    Friend WithEvents Button3 As Button
 End Class
